@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstPony" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1E-Ws-KzA">
+                                <rect key="frame" x="20" y="138" width="352" height="31.333333333333343"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.81811990420000003" green="1" blue="0.95097564990000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-Jo-VS1">
+                                <rect key="frame" x="63" y="258.33333333333331" width="267" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CsH-sg-uh6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2H-Wu-bHa">
+                                <rect key="frame" x="99.999999999999986" y="424" width="192.66666666666663" height="36"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01j-VC-DKR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QJc-Jo-VS1" secondAttribute="trailing" constant="84" id="0vH-aB-rfF"/>
+                            <constraint firstItem="k2H-Wu-bHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="3g6-ZX-ctO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k2H-Wu-bHa" secondAttribute="trailing" constant="121.5" id="8Xb-cw-zs3"/>
+                            <constraint firstItem="QJc-Jo-VS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="9EL-PE-5qX"/>
+                            <constraint firstItem="k2H-Wu-bHa" firstAttribute="top" secondItem="QJc-Jo-VS1" secondAttribute="bottom" constant="125.67" id="I8u-jG-4O1"/>
+                            <constraint firstItem="n1E-Ws-KzA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JCZ-TO-X7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n1E-Ws-KzA" secondAttribute="trailing" constant="42" id="Ke2-BO-23h"/>
+                            <constraint firstItem="k2H-Wu-bHa" firstAttribute="top" secondItem="QJc-Jo-VS1" secondAttribute="bottom" constant="125.67" id="Ksr-aF-M2F"/>
+                            <constraint firstItem="QJc-Jo-VS1" firstAttribute="top" secondItem="n1E-Ws-KzA" secondAttribute="bottom" constant="89" id="NDS-j2-cVM"/>
+                            <constraint firstItem="n1E-Ws-KzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="PcJ-1y-x5X"/>
+                            <constraint firstItem="QJc-Jo-VS1" firstAttribute="top" secondItem="n1E-Ws-KzA" secondAttribute="bottom" constant="89" id="S4u-6E-eEo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k2H-Wu-bHa" secondAttribute="bottom" constant="276" id="TVn-Ea-HX7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Submit" destination="k2H-Wu-bHa" id="ouI-JI-C1w"/>
+                        <outlet property="inputTf" destination="QJc-Jo-VS1" id="N3o-Ot-ubp"/>
+                        <outlet property="outputLbl" destination="n1E-Ws-KzA" id="xXd-s1-LWD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="118.22660098522168"/>
+        </scene>
+    </scenes>
+</document>
